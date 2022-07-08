@@ -39,13 +39,17 @@ Before we get started, make sure you've created an account on Hugging Face🤗, 
 <summary>Task 2: Cloning your Space and Adding Your App</summary>
 <br>
 
-1. We'll want to navigate outside of any existing directory and use the command:
+1. We'll want to navigate outside of any existing repository directory and use the command, after it runs we'll want to CD into the created directory:
 
 ```console
 git clone https://huggingface.co/spaces/<YOUR HUGGINGFACE ACCT.>/<YOUR SPACE NAME>
 ```
+     
+```console
+cd <YOUR SPACE NAME>
+```
 
-2. We'll want to add our working Streamlit `.py` file, as well as the `images` folder from the previous phase to this repository. You can do it through the graphical user interface, or you can use the `cp -a` command to copy the contents of the folder your Streamlit app resides in. (The `-a` tag here lets us recursively copy the *contents* of the directory we're pointing at. We want to do this becasue we want our streamlit `.py` file to be at the top level, not tucked away in a directory)
+2. We'll want to add our working Streamlit `.py` file, as well as the `images` folder and the `sentiment_data.csv` from the previous phase of Week 1 to this repository. You can do it through the graphical user interface, or you can use the provided command to copy the contents of the folder your Streamlit app resides in. (The `-a` tag here lets us recursively copy the *contents* of the directory we're pointing at. We want to do this becasue we want our streamlit `.py` file to be at the top level, not tucked away in a directory)
 
 ```console
 cp -a ../Path/To/Dir/Containing/Streamlit/App/. .
@@ -92,7 +96,7 @@ git push
 
 ![image](https://i.imgur.com/wxiTz2V.png)
 
-10. Let it build. (you can check the progress by click on the `See logs` button next to where it says "* Building"
+10. Let it build. (you can check the progress by click on the `See logs` button next to where it says "* Building")
 
 11. Once it's done - refresh - and you should see your Streamlit app working, and deployed on Hugging Face🤗 Spaces!
 
