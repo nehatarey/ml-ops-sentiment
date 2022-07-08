@@ -101,7 +101,7 @@ for i in range(1, len(dfSentiment)-1):
     with placeholder.container():
 
         # create columns
-        kpi1, kpi2 = st.columns(3)
+        kpi1, kpi2 = st.columns(2)
 
         # fill in those three columns with respective metrics or KPIs
         kpi1.metric(
