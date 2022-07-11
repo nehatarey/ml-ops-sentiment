@@ -2,6 +2,7 @@ name: tsla_bot
 channels:
   - conda-forge
 dependencies:
+  - python==3.8
   - loguru==0.6.0
   - matplotlib==3.5.2
   - pandas==1.4.2
